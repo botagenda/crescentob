@@ -28,7 +28,7 @@ def main():
 
 @st.cache
 def load_data():
-    df = pd.read_csv('excel.csv')
+    df = pd.read_csv('excel.csv',index_col=0)
 #    df = data.cars()
     return df
 
